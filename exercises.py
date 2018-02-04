@@ -16,9 +16,11 @@ s = 0
 for e in example_list:
 	s += e
 print(s)
-#
+#1
+#18
+#38
 # What do these five lines of code do?
-#
+# They take the list and add them, outputting a number for each result. (ex 1, then 1+17 =18, then 18+20 =38)
 
 # --------------------------------------------------
 
@@ -33,15 +35,15 @@ example_set = example_set - example_set_2
 print(example_set)
 set_to_list = list(example_set)
 print(set_to_list)
-#
-#
-#
-#
-#
+#{1, 2, 3, 4}
+#3 is in the set
+#4 is in the set
+#{1, 2, 3}
+#[1, 2, 3]
 # What qualities of a python set do you see in the (above) example?
-#
+#no duplicates, ordered
 # In what situations might a python set be a useful data structure?
-#
+#when trying to see how many uniques there are
 
 # --------------------------------------------------
 
@@ -55,15 +57,15 @@ students = ['James','Paige','George','Ruth','Gwen','Claire']
 example_dictionary['students'] = students
 print(example_dictionary)
 print(example_dictionary['students'][2])
-#
-#
-#
-#
-#
+#{'class': 'Z-399', 'teacher': 'Jason Francis', 'time': 9.0, 5: 12345}
+#12345
+#{'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345}
+#{'class': 'Z-399', 'teacher': 'Jason Francis', 'time': '9:00', 5: 12345, 'students': ['James', 'Paige', 'George', 'Ruth', 'Gwen', 'Claire']}
+#George
 # What qualities of a python dictionary do you see in the (above) example?
-#
+#you can add to it, multiple data types, key:value
 # Write a python dictionary that might describe a bicycle. I'll get you started. Think about what qualities a bicycle could have (top speed, mileage, pedals, seat height, etc)
-bicycle = { 'color':'', 'wheels':[] }
+bicycle = { 'color':'blue', 'wheels':[2], 'gears':[21], 'type':'road bike', 'surface':'road' }
 
 # --------------------------------------------------
 
@@ -77,11 +79,11 @@ r = product_list([1,2,3])
 print(r)
 print(product_list([2,5,6]))
 print(product_list([-2,3,-4,5,-6]))
-#
-#
-#
+#6
+#60
+#-720
 # What is happening in the (above) example?
-#
+# They are being multiplied together and outputting the result
 
 # --------------------------------------------------
 
@@ -108,7 +110,7 @@ for y in years:
 		print(str(y) + ': I get an extra day this year!')
 	else:
 		print(str(y) + ': Just 365 for me')
-#
+#nothing was popping up for me
 #
 #
 #
@@ -117,7 +119,7 @@ for y in years:
 # What is happening in the (above) example?
 #
 # What is the purpose for the multi-line comment at the beginning of the is_leap_year function?
-#
+# to provide a description
 # What happens if you pass a value to the function that isn't a year? Why?
 #
 
@@ -145,7 +147,7 @@ for i in range(0,10):
 		print('%d: buzz'%i)
 	else:
 		print(i)
-#
+#when I copy paste the code I get SyntaxError: invalid syntax
 #
 #
 #
@@ -218,6 +220,7 @@ script = [
 ]
 starting = 0
 get_option(script[starting]['options'])
+#SyntaxError: invalid syntax
 # What is happening in this block of code?
 #
 # What does the get_option function do?
